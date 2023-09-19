@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_66e668dab014b33c70863596a03c0701 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_66e668dab014b33c70863596a03c0701" ></div>
+        
+</body>
+<script>    
+    
+            var map_66e668dab014b33c70863596a03c0701 = L.map(
+                "map_66e668dab014b33c70863596a03c0701",
+                {
+                    center: [37.5697599, 126.9836604],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9374e58a0b6ada0f415cd3749b4d55a5 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_66e668dab014b33c70863596a03c0701);
+        
+    
+            var marker_e1026c913cb5201868b1c8f27553f4ce = L.marker(
+                [37.57966235, 126.97646035],
+                {}
+            ).addTo(map_66e668dab014b33c70863596a03c0701);
+        
+    
+            var icon_204566c74784a2b5fa138917bc622aad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "arrow-down", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e1026c913cb5201868b1c8f27553f4ce.setIcon(icon_204566c74784a2b5fa138917bc622aad);
+        
+    
+        var popup_224696031d9e75c7813a4b2aaf71d252 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24219cb9d5e290974b06c23fe2aee5dd = $(`<div id="html_24219cb9d5e290974b06c23fe2aee5dd" style="width: 100.0%; height: 100.0%;">경복궁</div>`)[0];
+                popup_224696031d9e75c7813a4b2aaf71d252.setContent(html_24219cb9d5e290974b06c23fe2aee5dd);
+            
+        
+
+        marker_e1026c913cb5201868b1c8f27553f4ce.bindPopup(popup_224696031d9e75c7813a4b2aaf71d252)
+        ;
+
+        
+    
+    
+            var marker_6a0e10998a75b10e450e7d08225f26ef = L.marker(
+                [37.5658049, 126.9751461],
+                {}
+            ).addTo(map_66e668dab014b33c70863596a03c0701);
+        
+    
+            var icon_51a46d329e60ff79cfcf37c4f4776099 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6a0e10998a75b10e450e7d08225f26ef.setIcon(icon_51a46d329e60ff79cfcf37c4f4776099);
+        
+    
+        var popup_a48d790246dbdf1cbb3188b444e451b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f60048c57573df136141a1f919cba8a9 = $(`<div id="html_f60048c57573df136141a1f919cba8a9" style="width: 100.0%; height: 100.0%;">덕수궁</div>`)[0];
+                popup_a48d790246dbdf1cbb3188b444e451b7.setContent(html_f60048c57573df136141a1f919cba8a9);
+            
+        
+
+        marker_6a0e10998a75b10e450e7d08225f26ef.bindPopup(popup_a48d790246dbdf1cbb3188b444e451b7)
+        ;
+
+        
+    
+    
+            var marker_271481dabeab14f293a9e91129a688f4 = L.marker(
+                [37.5794309, 126.9910426],
+                {}
+            ).addTo(map_66e668dab014b33c70863596a03c0701);
+        
+    
+            var icon_2b39ceae46221aa0ec70a69f20a6af45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_271481dabeab14f293a9e91129a688f4.setIcon(icon_2b39ceae46221aa0ec70a69f20a6af45);
+        
+    
+        var popup_2cec7264d52b00acf61835f37c1600e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bcb4dfa5e3c300897e86797e8f671984 = $(`<div id="html_bcb4dfa5e3c300897e86797e8f671984" style="width: 100.0%; height: 100.0%;">창덕궁</div>`)[0];
+                popup_2cec7264d52b00acf61835f37c1600e8.setContent(html_bcb4dfa5e3c300897e86797e8f671984);
+            
+        
+
+        marker_271481dabeab14f293a9e91129a688f4.bindPopup(popup_2cec7264d52b00acf61835f37c1600e8)
+        ;
+
+        
+    
+    
+            var marker_4cf53cdd384eb41f81e24af69ed71b8b = L.marker(
+                [37.5787708, 126.9948698],
+                {}
+            ).addTo(map_66e668dab014b33c70863596a03c0701);
+        
+    
+            var icon_7a9eb3fb9f77f81e6be0de030b7d4dce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4cf53cdd384eb41f81e24af69ed71b8b.setIcon(icon_7a9eb3fb9f77f81e6be0de030b7d4dce);
+        
+    
+        var popup_20f75ff6a52013094df32de0ea4b27fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8a253cc385efcf12e132dd5064ec6c5 = $(`<div id="html_f8a253cc385efcf12e132dd5064ec6c5" style="width: 100.0%; height: 100.0%;">창경궁</div>`)[0];
+                popup_20f75ff6a52013094df32de0ea4b27fe.setContent(html_f8a253cc385efcf12e132dd5064ec6c5);
+            
+        
+
+        marker_4cf53cdd384eb41f81e24af69ed71b8b.bindPopup(popup_20f75ff6a52013094df32de0ea4b27fe)
+        ;
+
+        
+    
+    
+            var marker_175656a7c71d3403d1532213a48d315b = L.marker(
+                [37.574583, 126.994143],
+                {}
+            ).addTo(map_66e668dab014b33c70863596a03c0701);
+        
+    
+            var icon_76b1c9d47e3a7c6fd5b5663c7ef67ce9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_175656a7c71d3403d1532213a48d315b.setIcon(icon_76b1c9d47e3a7c6fd5b5663c7ef67ce9);
+        
+    
+        var popup_b8feee531bd6cd2e2bffa134ba3b1b5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4de1c22f13025251b99c4db85e5adb14 = $(`<div id="html_4de1c22f13025251b99c4db85e5adb14" style="width: 100.0%; height: 100.0%;">종묘</div>`)[0];
+                popup_b8feee531bd6cd2e2bffa134ba3b1b5a.setContent(html_4de1c22f13025251b99c4db85e5adb14);
+            
+        
+
+        marker_175656a7c71d3403d1532213a48d315b.bindPopup(popup_b8feee531bd6cd2e2bffa134ba3b1b5a)
+        ;
+
+        
+    
+</script>

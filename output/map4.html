@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f83805ee4b2ebfe27e5f7e58cbc3034b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f83805ee4b2ebfe27e5f7e58cbc3034b" ></div>
+        
+</body>
+<script>    
+    
+            var map_f83805ee4b2ebfe27e5f7e58cbc3034b = L.map(
+                "map_f83805ee4b2ebfe27e5f7e58cbc3034b",
+                {
+                    center: [37.5697599, 126.9836604],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2869fe081264895d71688b34ffaaa76a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f83805ee4b2ebfe27e5f7e58cbc3034b);
+        
+    
+            var circle_marker_46d535597aa8713c4b795a943fdc40e3 = L.circleMarker(
+                [37.57966235, 126.97646035],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#38604A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_f83805ee4b2ebfe27e5f7e58cbc3034b);
+        
+    
+        var popup_346798a18c4ca5fc27a2c146315e6543 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2953c72df5bc658a609eefb364c14f27 = $(`<div id="html_2953c72df5bc658a609eefb364c14f27" style="width: 100.0%; height: 100.0%;">경복궁</div>`)[0];
+                popup_346798a18c4ca5fc27a2c146315e6543.setContent(html_2953c72df5bc658a609eefb364c14f27);
+            
+        
+
+        circle_marker_46d535597aa8713c4b795a943fdc40e3.bindPopup(popup_346798a18c4ca5fc27a2c146315e6543)
+        ;
+
+        
+    
+    
+            var circle_marker_8fe19aad8e0db9a051254ffcccdfb6cb = L.circleMarker(
+                [37.5697869, 126.9823161],
+                {"bubblingMouseEvents": true, "color": "#7ED0B9", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7B965E", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_f83805ee4b2ebfe27e5f7e58cbc3034b);
+        
+    
+        var popup_4be7276bb422574f83da524ca3396ae9 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_4d6f616ef9dccda2aaa0b5c05bbae85b = $(`<div id="html_4d6f616ef9dccda2aaa0b5c05bbae85b" style="width: 100.0%; height: 100.0%;">영풍문고 - 종료본점</div>`)[0];
+                popup_4be7276bb422574f83da524ca3396ae9.setContent(html_4d6f616ef9dccda2aaa0b5c05bbae85b);
+            
+        
+
+        circle_marker_8fe19aad8e0db9a051254ffcccdfb6cb.bindPopup(popup_4be7276bb422574f83da524ca3396ae9)
+        ;
+
+        
+    
+</script>
